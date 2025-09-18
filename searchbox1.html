@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Search Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Anything</title>
   <style>
     body {
-      background-color: #f9f9f9;
       font-family: Arial, sans-serif;
+      background: #f4f4f4;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
     }
-    .form-container {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 300px;
+    h1 {
+      color: #333;
     }
-    .form-container img {
-      width: 60px;
-      margin-bottom: 20px;
+    form {
+      display: flex;
+      gap: 10px;
     }
-    .form-container input[type="text"] {
-      width: 100%;
+    input[type="text"] {
       padding: 10px;
-      margin-bottom: 15px;
+      font-size: 16px;
+      width: 300px;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 4px;
     }
-    .form-container button {
+    button {
       padding: 10px 20px;
-      background-color: #007bff;
+      background-color: #28a745;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-size: 16px;
       cursor: pointer;
     }
-    .form-container button:hover {
-      background-color: #0056b3;
+    button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Logo">
-    <form action="https://formsubmit.co/varshuvijayakumar@email.com" method="POST">
-      <input type="text" name="search" placeholder="Enter your query..." required>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="thankyou.html">
-      <button type="submit">Search</button>
-    </form>
-  </div>
+  <h1>Search Anything</h1>
+  <form action="https://formsubmit.co/varshuvijayakumar@gmail.com" method="POST">
+    <input type="text" name="search" placeholder="ENTER YOUR QUERY..." required />
+    <button type="submit">Submit</button>
+
+    
+    <input type="hidden" name="_captcha" value="false">
+    
+    <input type="hidden" name="_next" value="https://varshuvijayakumar.github.io/thankyou.html">
+  </form>
 </body>
 </html>
